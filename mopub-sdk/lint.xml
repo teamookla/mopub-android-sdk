@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+<issue id="LogTagMismatch">
+    <!--
+        Not concerned about this error in a provided library
+    -->
+    <ignore path="src/main/java/com/mopub/common/logging/MoPubLog.java"/>
+</issue>
+
+</lint>
