@@ -15,7 +15,10 @@ public abstract class BaseUrlGenerator {
     public abstract String generateUrlString(String serverHostname);
 
     protected void initUrlString(String serverHostname, String handlerType) {
-        mStringBuilder = new StringBuilder("http://" + serverHostname + handlerType);
+//BEGIN_OOKLA_EDIT
+        //mStringBuilder = new StringBuilder("http://" + serverHostname + handlerType);
+        mStringBuilder = new StringBuilder("https://" + serverHostname + handlerType);
+//END_OOKLA_EDIT
         mFirstParam = true;
     }
 
