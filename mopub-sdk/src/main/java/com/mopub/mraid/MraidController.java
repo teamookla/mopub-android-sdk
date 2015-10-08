@@ -1,5 +1,8 @@
 package com.mopub.mraid;
 
+//BEGIN_OOKLA_EDIT
+import android.annotation.SuppressLint;
+//END_OOKLA_EDIT
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -880,6 +883,9 @@ public class MraidController {
     }
 
     @VisibleForTesting
+//BEGIN_OOKLA_EDIT
+    @SuppressLint("WrongConstant")
+//END_OOKLA_EDIT
     void unApplyOrientation() {
         if (mActivity != null && mOriginalActivityOrientation != null) {
             mActivity.setRequestedOrientation(mOriginalActivityOrientation);
