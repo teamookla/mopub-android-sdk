@@ -32,6 +32,11 @@ android {
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']
         }
+//BEGIN_OOKLA_EDIT
+        test {
+            java.srcDirs = []
+        }
+//END_OOKLA_EDIT
     }
 
     buildTypes {
